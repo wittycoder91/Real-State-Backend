@@ -40,10 +40,15 @@ getRealEstateCollection = () => {
   return db.collection("realestate");
 };
 
+getContactCollection = () => {
+  return db.collection("contacts");
+};
+
 module.exports = {
   getDb,
   connectToDatabase,
   getUserCollection,
   getAdminCollection,
   getRealEstateCollection,
+  getContactCollection,
 };
